@@ -1,15 +1,17 @@
-# Server-Wake-Up-Scheduler
-script puts server to sleep and wakes at specified time
+# Server Wake-Up Scheduler
+This script puts the server to sleep and wakes it at a specified time.
 
 ## Prerequisites
-- Made for Unraid server with UserScript Plugin but will run on any Linux operating system with `rtcwake` command & sudo privileges.
+- Made for Unraid servers with UserScript Plugin, but will run on any Linux operating system with `rtcwake` command and sudo privileges.
 
 ## Usage
 
 1. **Setting Wake-Up Time**
    Edit the script and specify the wake-up time in the 24-hour format at the top of the script:
-   Below would wake server at 16:18 or 4:18 pm
-   ```time="16:18" # Set your desired wake-up time for your server here```
+   The example below would wake the server at 16:18 or 4:18 PM.
+   ```bash
+   time="16:18" # Set your desired wake-up time for your server here
+
 
 
 
