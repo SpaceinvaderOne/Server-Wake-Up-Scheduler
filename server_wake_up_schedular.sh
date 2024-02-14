@@ -22,9 +22,11 @@ current_minutes=${current_time#*:}
 target_hours=${time%%:*}
 target_minutes=${time#*:}
 
+echo "Wakeup planned at $target_hours:$target_minutes"
+
 # Calculate the time difference in seconds
 current_seconds=$((current_hours * 3600 + current_minutes * 60))
-target_seconds=$((target_hours * 3600 + target_minutes * 60))
+target_seconds=$((10#$target_hours * 3600 + 10#$target_minutes * 60))
 time_diff_seconds=$((target_seconds - current_seconds))
 
 # Check if the target time is earlier than the current time (example for next day wake-up)
